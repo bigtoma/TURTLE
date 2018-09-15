@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.team9.admin.turtle001">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="com.xh.musicplayer.server.MUSICPLAYER_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launche"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launche_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".welcome2" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Mussic_player.Main_Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".Mussic_player.Main_Activity2" android:screenOrientation="portrait"/>
+        <activity android:name=".Mussic_player.Main_Activity3" android:screenOrientation="portrait" />
+        <activity android:name=".Mussic_player.Main_Activity4" android:screenOrientation="portrait"/>
+        <activity android:name=".Fragment_main.WebActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Fragment_main.AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Game2048.GameActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Fragment_3_content.MainActivity_ai"
+                  android:windowSoftInputMode="adjustResize"
+                  android:theme="@style/AppTheme2" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name=".happy.Q0Activity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name=".happy.Q2Activity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name=".happy.Q1Activity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name=".happy.Q3Activity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name=".happy.Q4Activity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name=".happy.Q5Activity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name=".happy.Q6Activity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name=".happy.ResultActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name=".happy.Q7Activity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name=".happy.Q8Activity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name=".happy.Q9Activity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name=".happy.Q10Activity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name=".happy.PsActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name=".history.ChartActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Fragment_main.Mx_introduction" android:screenOrientation="portrait"/>
+        <activity android:name=".diary.MainActivity_diary" android:screenOrientation="portrait"/>
+        <activity android:name=".diary.DiaryView" android:screenOrientation="portrait"/>
+        <activity android:name=".diary.SelectAct" android:screenOrientation="portrait"/>
+
+
+        <service
+            android:name=".Mussic_player.server.MusicPlayerService"
+            android:permission="com.xh.musicplayer.server.MUSICPLAYER_SERVICE">
+
+            <intent-filter>
+                <action android:name="com.xh.musicplayer.server.MusicPlayerService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
