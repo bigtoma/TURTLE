@@ -4,6 +4,8 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+// 测试得分数据库
+
 public class Historydb extends SQLiteOpenHelper{
 
     public static final String TABLE_NAME = "history";

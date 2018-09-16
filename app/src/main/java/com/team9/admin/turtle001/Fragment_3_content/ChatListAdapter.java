@@ -10,6 +10,8 @@ import com.team9.admin.turtle001.R;
 import java.util.ArrayList;
 import java.util.List;
 
+//聊天listview的adapter
+
 public class ChatListAdapter extends BaseAdapter {
     private List<ChatData> mList = new ArrayList<>();
     private ChatData data;

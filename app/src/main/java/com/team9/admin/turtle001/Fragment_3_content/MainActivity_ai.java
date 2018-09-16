@@ -1,5 +1,6 @@
 package com.team9.admin.turtle001.Fragment_3_content;
 
+
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
@@ -16,6 +17,8 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
+
+// 机器人
 
 public class MainActivity_ai extends AppCompatActivity implements View.OnClickListener{
     private ListView lv_chat_list;

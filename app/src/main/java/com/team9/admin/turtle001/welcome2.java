@@ -14,6 +14,8 @@ import android.widget.TextView;
 import com.team9.admin.turtle001.Fragment_2_content.Mingxiang;
 import com.team9.admin.turtle001.Mussic_player.Main_Activity;
 
+// 欢迎界面
+
 public class welcome2 extends AppCompatActivity {
 
 

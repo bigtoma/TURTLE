@@ -47,7 +47,7 @@
         android:layout_marginRight="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:text="Version update log:\n\n version 0.14 :初始版本\n\n version 0.35 :修复音乐播放等若干bug\n\n version 0.50 :优化UI\n
+        android:text="Version update log:\n\n version 0.14 :初始版本\n\n version 0.35 :修复音乐播放等若干bug\n\n version 0.50 :优化UI\n\n
  version 0.72 :添加活动管理器，提升用户体验\n\n version 0.81 :添加日记功能\n\n version 0.90 :添加冥想引导界面\n\n version 1.0 : 修复若干bug,优化界面,应用上线\n\n version 1.0.1 : 修复2048在部分机型上不正常显示的问题"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

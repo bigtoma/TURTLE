@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import java.util.ArrayList;
 import java.util.List;
 
+//带有活动管理器的BaseActivity类
+
 public class BaseActivity extends AppCompatActivity {
     @Override
 

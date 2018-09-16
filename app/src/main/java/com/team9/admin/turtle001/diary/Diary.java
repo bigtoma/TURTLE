@@ -1,7 +1,11 @@
 package com.team9.admin.turtle001.diary;
 
+
+
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
+
+//新建日记类
 
 public class Diary  {
 

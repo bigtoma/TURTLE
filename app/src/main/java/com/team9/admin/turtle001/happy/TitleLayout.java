@@ -12,6 +12,8 @@ import com.team9.admin.turtle001.ActivityCollector;
 import com.team9.admin.turtle001.MainActivity;
 import com.team9.admin.turtle001.R;
 
+// 自定义控件
+
 public class TitleLayout extends LinearLayout {
     private Button back;
     private Context context;

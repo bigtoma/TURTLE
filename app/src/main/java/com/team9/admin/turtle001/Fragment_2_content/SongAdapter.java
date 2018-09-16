@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import com.team9.admin.turtle001.R;
 import java.util.List;
-
+//音乐界面listview的adapter
 
 public class
 SongAdapter extends ArrayAdapter<Song> {

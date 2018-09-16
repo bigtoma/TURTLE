@@ -35,6 +35,8 @@ import com.youth.banner.loader.ImageLoader;
 import java.util.ArrayList;
 import java.util.List;
 
+// 主页
+
 public class FragmentOne extends Fragment   implements OnBannerListener  {
 
     private Banner banner;
@@ -47,16 +49,17 @@ public class FragmentOne extends Fragment   implements OnBannerListener  {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view2 = inflater.inflate(R.layout.activity_homepage, container, false);
-        List<Model> datas = new ArrayList<Model>();
-        datas.add(new Model("大不自多，海纳江河，惟学无际，际于天地","http://www.zju.edu.cn/"));
-        datas.add(new Model("五花马，千金裘，呼儿将出换美酒，与尔同销万古愁。","https://baike.baidu.com/item/%E6%9D%8E%E7%99%BD/1043?fr=aladdin"));
-        datas.add(new Model("我是阿拉伯的酋长，你的爱情由我独享，今夜当你进入梦乡，我将溜进你的闺房","https://book.douban.com/subject/1008988/"));
-        datas.add(new Model("面对愚昧，神们自己也缄口不言","https://book.douban.com/subject/26264967/"));
-        datas.add(new Model("他的梦幻在阳台上筑起黑燕子的巢穴，在午睡的昏沉中留下亲吻和扇动翅膀的窸窣。","https://book.douban.com/subject/10594787/"));
-        TBAdapter adapter = new TBAdapter(datas,getContext());
-        upRoll = (VerticalBannerView) view2.findViewById(R.id.uoRoll);
-        upRoll.setAdapter(adapter);
-        upRoll.start();
+
+        Article article =new Article(getContext());
+        article.addActicle();
+        upRoll();
+        fabclick();
+        initdata();
+        bannerInitView();
+        buttonOnclick();
+        return view2;
+    }
+    private void fabclick(){
 
         FloatingActionButton fab = (FloatingActionButton) view2.findViewById(R.id.fab_add);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -67,18 +70,26 @@ public class FragmentOne extends Fragment   implements OnBannerListener  {
                 startActivity(detailIntent);
             }
         });
+    }
 
-        Article article =new Article(getContext());
-        article.addActicle();
-        banner = (Banner) view2.findViewById(R.id.banner);
-        initdata();
-        bannerInitView();
-        buttonOnclick();
-        return view2;
+
+    private void upRoll(){
+        List<Model> datas = new ArrayList<Model>();
+        datas.add(new Model("大不自多，海纳江河，惟学无际，际于天地","http://www.zju.edu.cn/"));
+        datas.add(new Model("五花马，千金裘，呼儿将出换美酒，与尔同销万古愁。","https://baike.baidu.com/item/%E6%9D%8E%E7%99%BD/1043?fr=aladdin"));
+        datas.add(new Model("我是阿拉伯的酋长，你的爱情由我独享，今夜当你进入梦乡，我将溜进你的闺房","https://book.douban.com/subject/1008988/"));
+        datas.add(new Model("面对愚昧，神们自己也缄口不言","https://book.douban.com/subject/26264967/"));
+        datas.add(new Model("他的梦幻在阳台上筑起黑燕子的巢穴，在午睡的昏沉中留下亲吻和扇动翅膀的窸窣。","https://book.douban.com/subject/10594787/"));
+        TBAdapter adapter = new TBAdapter(datas,getContext());
+        upRoll = (VerticalBannerView) view2.findViewById(R.id.uoRoll);
+        upRoll.setAdapter(adapter);
+        upRoll.start();
     }
 
 
     private void bannerInitView() {
+
+
 
         banner.setViewPagerIsScroll(true);//是否轮播
         //设置内置样式，共有六种可以点入方法内逐一体验使用。
@@ -102,6 +113,8 @@ public class FragmentOne extends Fragment   implements OnBannerListener  {
 
 
     private void initdata(){
+
+        banner = (Banner) view2.findViewById(R.id.banner);
 
         //放图片地址的集合
         list_path=new ArrayList<>();
@@ -249,7 +262,7 @@ public class FragmentOne extends Fragment   implements OnBannerListener  {
         startActivity(intent);
 
     }
-    //    自定义的图片加载器
+    // 自定义的图片加载器
     private class MyLoader extends ImageLoader {
         @Override
         public void displayImage(Context context, Object path, ImageView imageView) {

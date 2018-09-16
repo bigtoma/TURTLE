@@ -15,6 +15,7 @@ import com.team9.admin.turtle001.Fragment_main.FragmentOne;
 import com.team9.admin.turtle001.Fragment_main.FragmentTwo;
 import com.team9.admin.turtle001.Fragment_main.FragmentThree;
 
+//底部导航栏
 
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationBar.OnTabSelectedListener {

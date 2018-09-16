@@ -5,7 +5,7 @@ import android.app.Activity;
 import java.util.ArrayList;
 import java.util.List;
 
-
+// 活动管理器类
 
     public class ActivityCollector {
 

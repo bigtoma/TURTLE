@@ -1,6 +1,5 @@
 package com.team9.admin.turtle001.Fragment_main;
 
-
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
@@ -37,6 +36,7 @@ import com.team9.admin.turtle001.history.ChartActivity;
 
 import static android.content.Context.MODE_PRIVATE;
 
+// 个人中心
 
 public class FragmentThree extends Fragment {
     private ImageView mHBack;
@@ -64,6 +64,8 @@ public class FragmentThree extends Fragment {
 
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view2 = inflater.inflate(R.layout.activity_mycenter, container, false);
+
+        //实现下拉回弹
         ImageView headerView = view2.findViewById(R.id.h_back);
         PullScrollView pullScrollView = view2.findViewById(R.id.pullscrollview);
         pullScrollView.setmHeaderView(headerView);

@@ -1,5 +1,6 @@
 package com.team9.admin.turtle001.diary;
 
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,6 +16,8 @@ import com.team9.admin.turtle001.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
+// 写入日记
 
 public class MainActivity_diary extends AppCompatActivity implements View.OnClickListener{
 

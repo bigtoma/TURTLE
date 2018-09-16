@@ -4,9 +4,8 @@ import android.content.Context;
 import android.util.DisplayMetrics;
 import android.view.WindowManager;
 
-/**
- * TODO 单例模式 获取屏幕宽高的帮助类
- */
+ //  获取屏幕宽高的帮助类
+
 
 public class ScreenSizeUtils {
     private static ScreenSizeUtils instance = null;

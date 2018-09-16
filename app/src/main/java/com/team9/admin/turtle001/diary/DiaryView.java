@@ -1,5 +1,7 @@
 package com.team9.admin.turtle001.diary;
 
+
+
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -10,6 +12,8 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.team9.admin.turtle001.R;
+
+//日记统计
 
 public class DiaryView extends AppCompatActivity {
 

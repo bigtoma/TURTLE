@@ -1,5 +1,8 @@
 package com.team9.admin.turtle001.diary;
 
+
+
+
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -15,6 +18,8 @@ import com.team9.admin.turtle001.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
+// 日记的修改
 
 public class SelectAct extends AppCompatActivity implements View.OnClickListener {
 

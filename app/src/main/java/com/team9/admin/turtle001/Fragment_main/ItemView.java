@@ -13,10 +13,9 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import com.team9.admin.turtle001.R;
 
-//*******************************************************
-//* 项目名称：MyCenter
-//* 创建者： Tom
-//*******************************************************
+// 个人中心 的自定义控件
+
+
 public class ItemView extends LinearLayout {
     private boolean isShowBottomLine = true;
     private boolean isShowLeftIcon = true;
@@ -122,7 +121,7 @@ public class ItemView extends LinearLayout {
 
     private itemClickListener listener;
 
-    //向外暴漏接口
+    //向外接口
     public void setItemClickListener(itemClickListener listener){
         this.listener=listener;
     }

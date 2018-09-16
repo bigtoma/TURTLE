@@ -4,6 +4,8 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+//创建推文数据库
+
 public class Articledb  extends SQLiteOpenHelper {
 
     public static final String TABLE_NAME = "article";

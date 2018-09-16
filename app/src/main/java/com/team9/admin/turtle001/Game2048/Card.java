@@ -6,6 +6,8 @@ import android.view.Gravity;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
+// 2048的小卡片
+
 public class Card extends FrameLayout{
 
     public Card(@NonNull Context context) {

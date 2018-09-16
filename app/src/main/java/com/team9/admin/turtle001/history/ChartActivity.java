@@ -1,6 +1,7 @@
 package com.team9.admin.turtle001.history;
 
 
+
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
@@ -11,6 +12,7 @@ import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 
+import com.team9.admin.turtle001.ActivityCollector;
 import com.team9.admin.turtle001.R;
 
 import java.util.ArrayList;
@@ -27,6 +29,8 @@ import lecho.lib.hellocharts.model.ValueShape;
 import lecho.lib.hellocharts.model.Viewport;
 import lecho.lib.hellocharts.view.LineChartView;
 import me.itangqi.waveloadingview.WaveLoadingView;
+
+//历史记录
 
 public class ChartActivity extends AppCompatActivity {
     private LineChartView lineChart;
@@ -252,5 +256,20 @@ public class ChartActivity extends AppCompatActivity {
         v.right = 7;
         lineChart.setCurrentViewport(v);
 
+    }
+
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        //开始
+        mWaveLoadingView.resumeAnimation();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        //结束
+        mWaveLoadingView.pauseAnimation();
     }
 }

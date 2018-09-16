@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 import com.team9.admin.turtle001.R;
 
+//游戏主页
+
 public class GameActivity extends AppCompatActivity {
 
     private int maxscore = 0;

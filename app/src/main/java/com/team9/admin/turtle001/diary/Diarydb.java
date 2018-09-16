@@ -1,8 +1,12 @@
 package com.team9.admin.turtle001.diary;
 
+
+
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
+// 新建日记数据库
 
 public class Diarydb extends SQLiteOpenHelper{
 

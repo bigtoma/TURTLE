@@ -12,6 +12,8 @@ import android.widget.GridLayout;
 import java.util.ArrayList;
 import java.util.List;
 
+// 2048的外部框
+
 public class GameView extends GridLayout{
 
     public GameView(Context context, AttributeSet attrs, int defStyleAttr) {
@@ -83,17 +85,7 @@ public class GameView extends GridLayout{
     }
 
 
-//    //调整宽高以适应屏幕
-//    @Override
-//    protected void onSizeChanged(int w,int h,int oldw,int oldh){
-//        super.onSizeChanged(w,h,oldw,oldh);
-//
-//        int cardWidth = (Math.min(w,h)-0)/4;
-//
-//        addCards(cardWidth,cardWidth);
-//
-//        startGame();
-//    }
+
     //添加卡片
     private void addCards(int cardWidth,int cardHeight){
 

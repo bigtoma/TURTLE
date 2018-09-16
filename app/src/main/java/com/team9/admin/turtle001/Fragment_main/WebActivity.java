@@ -1,5 +1,7 @@
 package com.team9.admin.turtle001.Fragment_main;
 
+
+
 import android.content.Intent;
 import android.net.http.SslError;
 import android.os.Build;
@@ -15,6 +17,8 @@ import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 
 import com.team9.admin.turtle001.R;
+
+// 所有网页在此打开
 
 public class WebActivity extends AppCompatActivity {
     private ProgressBar progressBar;

@@ -24,7 +24,7 @@ import com.team9.admin.turtle001.R;
 import java.util.ArrayList;
 import java.util.List;
 
-
+//冥想界面
 public class TabListFragment1 extends Fragment implements AdapterView.OnItemClickListener {
 
 

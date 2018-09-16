@@ -1,5 +1,5 @@
 package com.team9.admin.turtle001.Fragment_2_content;
-
+//冥想的类
 public class Mingxiang {
     private String name;
     private String songId;

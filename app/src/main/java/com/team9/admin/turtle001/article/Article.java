@@ -1,8 +1,11 @@
 package com.team9.admin.turtle001.article;
 
+
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+
+// 新建推文的类
 
 public class Article  {
     

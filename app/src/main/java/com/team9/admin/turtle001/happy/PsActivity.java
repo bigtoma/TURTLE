@@ -9,6 +9,8 @@ import android.widget.Button;
 import com.team9.admin.turtle001.BaseActivity;
 import com.team9.admin.turtle001.R;
 
+// 测试须知
+
 public class PsActivity extends BaseActivity implements View.OnClickListener {
     private Button bt1;
     public static int[] score = new int[11];

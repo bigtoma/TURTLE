@@ -1,5 +1,7 @@
 package com.team9.admin.turtle001.Fragment_main;
 
+
+
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -11,6 +13,8 @@ import com.taobao.library.BaseBannerAdapter;
 import com.taobao.library.VerticalBannerView;
 import com.team9.admin.turtle001.R;
 import java.util.List;
+
+// 滚动文字的adapter
 
 class TBAdapter extends BaseBannerAdapter<Model> {
 

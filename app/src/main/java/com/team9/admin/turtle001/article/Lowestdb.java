@@ -1,8 +1,12 @@
 package com.team9.admin.turtle001.article;
 
+
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
+
+//最低分数据库
 
 public class Lowestdb extends SQLiteOpenHelper {
 

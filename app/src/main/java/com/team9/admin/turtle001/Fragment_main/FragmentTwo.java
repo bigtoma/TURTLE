@@ -1,6 +1,5 @@
 package com.team9.admin.turtle001.Fragment_main;
 
-
 import android.nfc.Tag;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -22,6 +21,8 @@ import com.team9.admin.turtle001.Fragment_2_content.TabListFragment3;
 import com.team9.admin.turtle001.R;
 import java.util.ArrayList;
 import java.util.List;
+
+// 频道
 
 
 public class FragmentTwo extends Fragment   {
